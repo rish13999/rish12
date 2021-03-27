@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+             body
+            {
+               background-image: url('img/pic2.jpg');
+               color: white;
+               font-family: Helvetica;
+            }
+            input[type=Submit], input[type=reset]
+            {
+                background-color:white; 
+                border: none;
+                color: orange;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border: 2px solid orange;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+            input[type=Submit]:hover, input[type=reset]:hover 
+            {
+                background-color: orange;
+                color: white;
+            }
+            input[type=text]
+            {
+              border: solid;
+              border-color: orange;
+              height: 30;
+            }
+             input[type=password]
+            {
+              border: solid;
+              border-color: orange;
+              height: 30;
+            }
+            textarea
+            {
+             border: solid;
+             border-color: orange; 
+             width: 180;
+            }
+            select
+            {
+             border: solid;
+             border-color: orange; 
+             width: 160;
+              height: 30;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <div><center><h1>Registration Form</h1></center></div>
+        <form>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" placeholder="Enter Username" name="t1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                      <input type="password" placeholder="Enter Password" name="t2">  
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>
+                      <input type="password" placeholder="Confirm Password" name="t3">  
+                    </td>
+                </tr>
+                 <td>Email</td>
+                    <td>
+                        <input type="text" placeholder="Enter Email" name="t4">
+                    </td>
+                <tr>
+                  <td>Course</td>
+                  <td> 
+                    <select class="combo">
+                    <option>Select....</option>
+                    <option>MCA</option>
+                    <option>B.Arch</option>
+                    <option>B.Sc IT</option>
+                    <option>BCA</option>
+                    </select>
+                 </td>
+                 </tr>
+                   <tr>
+                       <td>Address</td>
+                   <td>
+                      <textarea name="t5" id=textarea> </textarea>
+                   </td>
+                </tr>
+                 <tr>
+                    <td>Phone Number</td>
+                    <td>
+                        <input type="text" placeholder="Enter Phone Number" name="t6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                      <input type="submit" value="Submit">  </td>
+                      <td>
+                <input type="reset" value="Reset">
+              </td></tr>
+            </table>
+        </form>
+    </center>    
+    </body>
+</html>
